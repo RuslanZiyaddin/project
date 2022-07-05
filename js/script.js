@@ -53,7 +53,7 @@ alert(`Вам точно, ${user[2]} лет?`);
 
 console.log('arr' + ' - objekt');
 console.log(4 + '5');
-*/
+
 
 let incr = 10,
     decr = 10;
@@ -77,3 +77,33 @@ console.log(!isChecked || isClose);
 
 //9 GIT
 
+*/
+//Задания
+
+let vopros = prompt('сколько фильмов вы уже посмотрели?', ''),
+    numberOfFilms = vopros;
+    
+
+alert('Вы посмотрели ' + numberOfFilms + ' фильма?');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const film1 = prompt('Один из последних просмотренных фильмов?', '');
+//personalMovieDB.movies = film1;
+
+const otsenka = prompt('На сколько оцените его?', '');
+personalMovieDB.movies[film1] = otsenka;
+
+const film2 = prompt('Один из последних просмотренных фильмов?', '');
+//personalMovieDB.movies = film1;
+
+const otsenka2 = prompt('На сколько оцените его?', '');
+personalMovieDB.movies[film2] = otsenka2;
+
+console.log(personalMovieDB);
